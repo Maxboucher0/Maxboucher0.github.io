@@ -1,34 +1,56 @@
-img,p, h1, h2, .divider {
-	width: 100%;
-	max-width: 600px;
-    margin-left: auto;
-	margin-right: auto;
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: black;
+    color: white;
 }
 
-img {
-	display: block;
-    padding: 15px 0px;
-}
-
-p {
-	font-size: 18px;
-	line-height: 1.4;
-    font-family: "Crimson text";
-}
-
-h1, h2 {
-    font-family: "Roboto";
+a {
+    color: #ac0808; /* Ensures links are also white */
 }
 
 .divider {
     height: 2px;
-    background-color: #0868ac;
+    background-color: #ac0808; /* Keeps the red color for dividers */
     margin-top: 10px;
     margin-bottom: 10px;
-    }
+}
+
+img, p, h1, h2, .divider {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    width: 50%; /* Adjusted from 75% to make images smaller */
+    padding: 15px 0px;
+}
+
+img:first-of-type {
+    width: 200%;
+    max-height: 400px;
+    object-fit: cover;
+}
+p {
+    font-size: 17px;
+    line-height: 1.4;
+    font-family: 'Helvetica Neue';
+    text-indent: 35px;
+}
+
+/* New styles for smaller text after 'How I Built It' */
+.how-built + p, .how-built + div + p {
+    font-size: 14px;
+
+
+h1, h2 {
+    font-family: 'Helvetica Neue';
+}
 
 #name {
     font-size: 14px;
-	line-height: 1.4;
-    font-family: "Roboto Slab";
+    line-height: 1.4;
+    font-family: 'Helvetica Neue';
 }

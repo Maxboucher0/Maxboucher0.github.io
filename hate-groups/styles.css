@@ -43,7 +43,7 @@ p {
 /* New styles for smaller text after 'How I Built It' */
 .how-built + p, .how-built + div + p {
     font-size: 14px;
-
+}
 
 h1, h2 {
     font-family: 'Helvetica Neue';
@@ -54,3 +54,4 @@ h1, h2 {
     line-height: 1.4;
     font-family: 'Helvetica Neue';
 }
+
